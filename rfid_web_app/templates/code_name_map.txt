@@ -1,0 +1,47 @@
+ForTests,TestResults
+developer:, hairui
+a,A
+b,B
+c,C
+d,D
+e,E
+f,F
+g,G
+h,H
+i,I
+j,J
+k,K
+l,L
+m,M
+n,N
+o,O
+p,P
+q,Q
+r,R
+s,S
+t,T
+u,U
+v,V
+w,W
+x,X
+y,Y
+z,Z
+
+X-rayLabCodes, X-rayLabNames
+gg,Good!
+bb,Bad!
+E28069950000600407F6F9D8,LBCO 1/8(#2 #6 #7)
+yy,Yes!
+nn,No!
+
+oo,OK!
+tt,Test
+rr,refine
+ii,improved
+fd,Finally Done!
+rd,Really Done!
+rf,Ready to Finish
+ays,Are you sure?
+hd,Howdy!
+zzz,What is this?
+ForDemonstration,Demonstration Results

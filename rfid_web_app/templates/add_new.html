@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID Web App: Add Text</title>
+    <script src="{{ url_for('static', filename='script1.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h2>Labelling new samples. Recommend enter the item name first</h2>
+            <button onclick="location.href='{{ url_for('index') }}'">Return to the Main Page</button> 
+        </div>
+    </header>
+
+    <div class="base">
+        <div class="left_section">   
+            <textarea id="code" name="code" rows="8" cols="24" placeholder="Enter an RFID code multiple times:"></textarea>
+            <br>
+            <button type="button" id="Clear_RFID">Clear RFID</button>
+        </div> 
+        <div class="right_section">
+            <textarea id="item" name="item" rows="6" cols="14" placeholder="Enter an item name:"></textarea>
+            <br>
+            <button type="button" id="Clear_Name">Clear Name</button>
+        </div>
+    </div> 
+        <pre id="to_be_added">{{ to_be_added }}</pre>
+        <button type="button" id="Submit_Save">Submit & Save</button>
+    </div>
+    <!-- Button to return to the main page -->
+    
+</body>
+</html>

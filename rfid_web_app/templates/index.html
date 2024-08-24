@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h2>RFID Web App</h2>
+            <button onclick="location.href='{{ url_for('add_new') }}'">Add more samples</button> 
+        </div>
+    </header> 
+    <!-- Main text entry block --> 
+    <div class="base"> 
+        <div class="left_section"> 
+            <div class="input_section">
+                <textarea id="mainTXT" name="user_input" placeholder="Enter RFID codes here..." rows="10" cols="16">{{ user_input }}</textarea>
+                <button type="button" id="searchBtn">Search</button>
+                <div id="searchBarContainer"></div>  <!-- Placeholder for the search bar --> 
+            </div>
+            
+        </div>
+
+        <div class="right_section">
+            
+            <!--the dynamic output -->
+            <pre>{{ output }}</pre>
+        </div>
+    </div>
+   
+</body>
+</html>
+
